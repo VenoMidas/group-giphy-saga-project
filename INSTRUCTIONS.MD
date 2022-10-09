@@ -1,3 +1,4 @@
+MEAGHAN
 - [X] index.js
     - [X] watcher saga contains...
         - [X] `FETCH_GIPHY` - call `fetchGiphy`
@@ -20,7 +21,13 @@
             - [X] action.type `SET_FAVORITE`
             - [X] return action.payload
 
-- [ ] `Search` view
+MEAGHAN
+- [ ] Router in App.js
+    - [ ] Home Page = '/'
+    - [ ] Favorites Page = '/favorite'
+
+MARK
+- [ ] `Search` view 
     - [ ] Create _component_
     - [ ] _Input_ that takes a string
     - [ ] Query search endpoint ???
@@ -36,13 +43,15 @@
         - [ ] What info to save for favorites view
         - [ ] `POST` to `/api/favorite`
 
+OSCAR
 - [ ] `Favorite` view
     - [ ] display only users favorited images
-        - [ ] `GET` all from `/api/favorite`
-        - [ ] `FETCH_FAVORITE` dispatch
+        - [X] `GET` all from `/api/favorite`
+        - [X] `FETCH_FAVORITE` dispatch
     - [ ] Display on DOM
         - [ ] `favoriteList` from redux store
             - [ ] const favoriteArray = useSelector `store.favoriteList`
+    SAVE FOR NEXT WEEK
     - [ ] category selector
         - [ ] input type of a select dropdown
             - [ ] options match whats on server categories table
@@ -53,6 +62,7 @@
             - [ ] needs to exist in the DB
 
 - [ ] Database structure 
+  - [ ] ERD plan
     - [ ] user clicks "favorite" and the id? of the gif needs to tie to the user, (1 (user) to many (gifs))
     - [ ] `category` table exists
         - [ ] gifs can have at least 1 category
@@ -70,11 +80,3 @@
 FETCH from a component - that calls a functions
 inside the called function you dispatch a SET - goes to reducer
 
-- [ ] Search a category
-  - [ ] /api/search? from api site
-  - [ ] display return 
-- [ ] Favorite gif
-  - [ ] POST into our database
-- [ ] View favorites
-  - [ ] GET all from favorites
-  - [ ] Allow user to set a category of gif (PUT)
