@@ -1,24 +1,24 @@
-- [ ] index.js
-    - [ ] watcher saga contains...
-        - [ ] `FETCH_GIPHY` - call `fetchGiphy`
-        - [ ] `FETCH_FAVORITE` - call `fetchFavorite`
-        - [ ] `UPDATE_CATEGORY` - call `updateCategory`
-    - [ ] function* (functions being watched)
-        - [ ] `fetchGiphy` - dispatch `SET_GIPHY`
-            - [ ] const `giphyArray` = yeild axios GET from giphy apy
-            - [ ] send `payload: giphyArray.data`
-        - [ ] `fetchFavorite` - dispatch `SET_FAVORITE`
-            - [ ] const `favoriteArray` = yeild axios GET from /api/favorite
-            - [ ] send `payload: favoriteArray.data`
-        - [ ] `updateCategory` will yield axios.put to /api/favorite/:id
-        - [ ] dispatch `FETCH_FAVORITE`
-    - [ ] reducers
-        - [ ] const `giphyList`  
-            - [ ] action.type `SET_GIPHY`
-            - [ ] return action.payload
-        - [ ] const `favoriteList`
-            - [ ] action.type `SET_FAVORITE`
-            - [ ] return action.payload
+- [X] index.js
+    - [X] watcher saga contains...
+        - [X] `FETCH_GIPHY` - call `fetchGiphy`
+        - [X] `FETCH_FAVORITE` - call `fetchFavorite`
+        - [X] `UPDATE_CATEGORY` - call `updateCategory`
+    - [X] function* (functions being watched)
+        - [X] `fetchGiphy` - dispatch `SET_GIPHY`
+            - [X] const `giphyArray` = yeild axios GET from giphy apy
+            - [X] send `payload: giphyArray.data`
+        - [X] `fetchFavorite` - dispatch `SET_FAVORITE`
+            - [X] const `favoriteArray` = yeild axios GET from /api/favorite
+            - [X] send `payload: favoriteArray.data`
+        - [X] `updateCategory` will yield axios.put to /api/favorite/:id
+        - [X] dispatch `FETCH_FAVORITE`
+    - [X] reducers
+        - [X] const `giphyList`  
+            - [X] action.type `SET_GIPHY`
+            - [X] return action.payload
+        - [X] const `favoriteList`
+            - [X] action.type `SET_FAVORITE`
+            - [X] return action.payload
 
 - [ ] `Search` view
     - [ ] Create _component_
@@ -69,3 +69,12 @@
 
 FETCH from a component - that calls a functions
 inside the called function you dispatch a SET - goes to reducer
+
+- [ ] Search a category
+  - [ ] /api/search? from api site
+  - [ ] display return 
+- [ ] Favorite gif
+  - [ ] POST into our database
+- [ ] View favorites
+  - [ ] GET all from favorites
+  - [ ] Allow user to set a category of gif (PUT)
