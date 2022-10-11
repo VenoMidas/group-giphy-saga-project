@@ -7,7 +7,7 @@ function Search() {
     const dispatch = useDispatch(); // setup dispatch
 
     const returnSearchResults = () => {
-        dispatch({ type: 'FETCH_MOVIES', payload: tag });
+        dispatch({ type: 'FETCH_GIPHY', payload: tag });
     };
 
     return (
@@ -15,6 +15,7 @@ function Search() {
             <label>Search</label>
             <input type="text" value={tag} onChange={event => setTag(event.target.value)} />
             <button onClick={returnSearchResults}>Search</button>
+            {/* map searchResults here */}
         </div>
     );
 };
