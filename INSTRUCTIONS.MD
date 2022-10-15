@@ -49,8 +49,8 @@ OSCAR
         - [X] `GET` all from `/api/favorite`
         - [X] `FETCH_FAVORITE` dispatch
     - [ ] Display on DOM
-        - [ ] `favoriteList` from redux store
-            - [ ] const favoriteArray = useSelector `store.favoriteList`
+        - [x] `favoriteList` from redux store
+            - [x] const favoriteArray = useSelector `store.favoriteList`
     SAVE FOR NEXT WEEK
     - [ ] category selector
         - [ ] input type of a select dropdown
