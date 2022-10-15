@@ -22,10 +22,11 @@ MEAGHAN
             - [X] return action.payload
 
 MEAGHAN
-- [ ] Router in App.js
-    - [ ] Home Page = '/'
-    - [ ] Favorites Page = '/favorite'
-
+- [X] Router in App.js
+    - [X] Home Page = '/'
+    - [X] Favorites Page = '/favorite'
+- [X] Add Header Component
+  
 MARK
 - [ ] `Search` view 
     - [ ] Create _component_
