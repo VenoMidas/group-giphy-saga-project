@@ -5,31 +5,34 @@ function Favorite() {
 
     const dispatch = useDispatch();
 
-    const favoriteArray = useSelector(store => store.favoriteList);
+    // const favoriteArray = useSelector(store => store.favoriteList);
 
     useEffect(() => {
-        dispatch({ type: 'FETCH_FAVORITE' }) // triggers saga then calls *fetchFavorite()
-    })
+        console.log('page load');
+    }, []);
+
 
 
     return (
-        <div>
-            <section className="favGifs">
+        <h2>Favorites Here</h2>
+        // <div>
+        //     <section className="favGifs">
 
-                <h2>FAVORITE GIFS</h2>
+        //         <h2>FAVORITE GIFS</h2>
+        //         <>
+        //         {favoriteArray.map(favGif => {
 
-                {favoriteArray.map(favGif => {
+        //             return (
+        //                 <div key={favGif.id} >
+        //                     {/* url will need to be set when favorites table is created */}
+        //                     <img src={favGif.url} />  
 
-                    return (
-                        <div key={favGif.id} >
-                            {/* url will need to be set when favorites table is created */}
-                            <img src={favGif.url} />  
-
-                        </div>
-                    );
-                })}
-            </section>
-        </div>
+        //                 </div>
+        //             );
+        //         })}
+        //         </>
+        //     </section>
+        // </div>
     )
 
 

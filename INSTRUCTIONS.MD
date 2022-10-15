@@ -28,9 +28,9 @@ MEAGHAN
 - [X] Add Header Component
   
 MARK
-- [ ] `Search` view 
-    - [ ] Create _component_
-    - [ ] _Input_ that takes a string
+- [X] `Search` view 
+    - [X] Create _component_
+    - [X] _Input_ that takes a string
     - [ ] Query search endpoint ???
         - [ ]  A `GET` that displays LIMIT 10? of results
         - [ ] `FETCH_GIPHY` dispatch
